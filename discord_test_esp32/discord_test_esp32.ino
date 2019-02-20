@@ -6,7 +6,7 @@
 
 void setup() {
   Serial.begin(9600);
-  connect_to_wifi();
+  connectWIFI();
   sendDiscord("Hello World!");
 }
 

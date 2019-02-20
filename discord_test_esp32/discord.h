@@ -45,7 +45,7 @@ const char* discordappCertificate = \
 
 WiFiMulti WiFiMulti;
 
-void connect_to_wifi() {
+void connectWIFI() {
   WiFiMulti.addAP(ssid, pass);
   WiFi.mode(WIFI_STA);
   Serial.print("[WiFi] Connecting to: ");

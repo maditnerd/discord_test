@@ -13,7 +13,7 @@ int status = WL_IDLE_STATUS;
 WiFiSSLClient client;
 HttpClient http_client = HttpClient(client, server, port);
 
-void connect_to_wifi() {
+void connectWIFI() {
   String fv = WiFi.firmwareVersion();
   if (fv < "1.0.0") {
     Serial.println("Please upgrade the firmware");
