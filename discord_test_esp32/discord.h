@@ -69,7 +69,7 @@ void sendDiscord(String content) {
       if (https.begin(*client, discord_webhook)) {  // HTTPS
         // start connection and send HTTP header
         https.addHeader("Content-Type", "application/json");
-        int httpCode = https.POST("{\"content\":\"" + content + "\"}");
+        int httpCode = https.POST("{\"content\":\"" + content + "\",\"tts\":" + discord_tts +"}");
 
         // httpCode will be negative on error
         if (httpCode > 0) {
